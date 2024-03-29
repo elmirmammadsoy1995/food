@@ -1,6 +1,3 @@
-header {
-  padding: 20px 0;
-}
 header .menu {
   background-color: #fcf8fa;
   padding: 0 25px;
@@ -30,6 +27,39 @@ header nav a {
 }
 header nav .home-color {
   color: #74bebc;
+}
+@media screen and (max-width: 576px) {
+  header .menu {
+    height: 70px;
+    padding-top: 15px;
+  }
+  header .menu .imgbox {
+    width: 40px;
+  }
+  header .menu .btn {
+    display: flex;
+    width: 55px;
+    height: 55px;
+  }
+  header .menu nav {
+    display: none;
+  }
+}
+@media screen and (max-width: 992px) {
+  header .menu {
+    height: 50px;
+  }
+  header .menu .imgbox {
+    width: 20px;
+  }
+  header .menu .btn {
+    display: flex;
+    width: 35px;
+    height: 35px;
+  }
+  header .menu nav {
+    display: none;
+  }
 }
 
 body {

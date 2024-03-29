@@ -1,5 +1,5 @@
 header
-    padding: 20px 0
+    // padding: 20px 0
     .menu
         background-color: #fcf8fa
         padding: 0 25px
@@ -8,7 +8,7 @@ header
         top: 0
         right: 0
         left: 0
-        z-index: 1      
+        z-index: 1
     .imgbox
         width: 40px
     .btn
@@ -26,4 +26,28 @@ header
             font-size: 20px
         .home-color
             color: #74bebc
-    
+
+    @media screen and ( max-width: 576px )
+        .menu
+            height: 70px
+            padding-top: 15px
+            .imgbox
+                width: 40px
+            .btn
+                display: flex
+                width: 55px
+                height: 55px
+            nav
+                display: none
+
+    @media screen and ( max-width: 992px )
+        .menu
+            height: 50px
+            .imgbox
+                width: 20px
+            .btn
+                display: flex
+                width: 35px
+                height: 35px
+            nav
+                display: none
