@@ -1,5 +1,4 @@
 header
-    // padding: 20px 0
     .menu
         background-color: #fcf8fa
         padding: 0 25px
@@ -11,14 +10,20 @@ header
         z-index: 1
     .imgbox
         width: 40px
-    .btn
-        background-color: #f2f2f4
-        width: 40px
-        height: 40px
+    .box
         display: flex
-        justify-content: center
-        align-items: center
-        display: none
+        flex-direction: row-reverse
+        .btn
+            background-color: #f2f2f4
+            width: 40px
+            height: 40px
+            display: flex
+            justify-content: center
+            align-items: center
+            display: none
+        .cart
+            background-color: #3cb5ba
+            color: #fafefe
     nav
         a
             color: #817f7f
@@ -27,27 +32,33 @@ header
         .home-color
             color: #74bebc
 
+    @media screen and ( max-width: 992px )
+        .menu
+            height: 50px
+            .imgbox
+                width: 20px
+            .box
+                .btn
+                    display: flex
+                    width: 35px
+                    height: 35px
+                .cart
+                    display: none
+            nav
+                display: none
+
     @media screen and ( max-width: 576px )
         .menu
             height: 70px
             padding-top: 15px
             .imgbox
                 width: 40px
-            .btn
-                display: flex
-                width: 55px
-                height: 55px
-            nav
-                display: none
-
-    @media screen and ( max-width: 992px )
-        .menu
-            height: 50px
-            .imgbox
-                width: 20px
-            .btn
-                display: flex
-                width: 35px
-                height: 35px
+            .box
+                .btn
+                    display: flex
+                    width: 55px
+                    height: 55px
+                .cart
+                    margin-right: 15px
             nav
                 display: none

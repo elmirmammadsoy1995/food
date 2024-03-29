@@ -11,7 +11,11 @@ header .menu {
 header .imgbox {
   width: 40px;
 }
-header .btn {
+header .box {
+  display: flex;
+  flex-direction: row-reverse;
+}
+header .box .btn {
   background-color: #f2f2f4;
   width: 40px;
   height: 40px;
@@ -19,6 +23,10 @@ header .btn {
   justify-content: center;
   align-items: center;
   display: none;
+}
+header .box .cart {
+  background-color: #3cb5ba;
+  color: #fafefe;
 }
 header nav a {
   color: #817f7f;
@@ -28,6 +36,25 @@ header nav a {
 header nav .home-color {
   color: #74bebc;
 }
+@media screen and (max-width: 992px) {
+  header .menu {
+    height: 50px;
+  }
+  header .menu .imgbox {
+    width: 20px;
+  }
+  header .menu .box .btn {
+    display: flex;
+    width: 35px;
+    height: 35px;
+  }
+  header .menu .box .cart {
+    display: none;
+  }
+  header .menu nav {
+    display: none;
+  }
+}
 @media screen and (max-width: 576px) {
   header .menu {
     height: 70px;
@@ -36,26 +63,13 @@ header nav .home-color {
   header .menu .imgbox {
     width: 40px;
   }
-  header .menu .btn {
+  header .menu .box .btn {
     display: flex;
     width: 55px;
     height: 55px;
   }
-  header .menu nav {
-    display: none;
-  }
-}
-@media screen and (max-width: 992px) {
-  header .menu {
-    height: 50px;
-  }
-  header .menu .imgbox {
-    width: 20px;
-  }
-  header .menu .btn {
-    display: flex;
-    width: 35px;
-    height: 35px;
+  header .menu .box .cart {
+    margin-right: 15px;
   }
   header .menu nav {
     display: none;
