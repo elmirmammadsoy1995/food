@@ -123,6 +123,32 @@ section {
 #delivered .box h4 {
   font-size: 20px;
 }
+@media screen and (max-width: 768px) {
+  #delivered .box {
+    text-align: center;
+  }
+  #delivered .box .textbox {
+    margin: 40px 0;
+  }
+  #delivered .box .textbox h1 {
+    font-size: 40px;
+    padding: 0 90px;
+    margin: 0;
+  }
+  #delivered .box .textbox h5 {
+    font-size: 15px;
+    padding: 25px 30px;
+    margin: 0;
+  }
+  #delivered .box .minibox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #delivered .box h4 {
+    margin-bottom: 80px;
+  }
+}
 @media screen and (max-width: 576px) {
   #delivered .box {
     text-align: center;
@@ -131,12 +157,25 @@ section {
     margin: 40px 0;
   }
   #delivered .box .textbox h1 {
+    font-size: 75px;
     padding: 0 50px;
-    margin: 0px;
+    margin: 0;
   }
   #delivered .box .textbox h5 {
+    font-size: 30px;
     padding: 25px 30px;
     margin: 0;
+  }
+  #delivered .box .btn {
+    padding: 16px 40px;
+  }
+  #delivered .box .minibox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  #delivered .box h4 {
+    margin-bottom: 80px;
   }
 }
 
