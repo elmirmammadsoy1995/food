@@ -123,6 +123,22 @@ section {
 #delivered .box h4 {
   font-size: 20px;
 }
+@media screen and (max-width: 576px) {
+  #delivered .box {
+    text-align: center;
+  }
+  #delivered .box .textbox {
+    margin: 40px 0;
+  }
+  #delivered .box .textbox h1 {
+    padding: 0 50px;
+    margin: 0px;
+  }
+  #delivered .box .textbox h5 {
+    padding: 25px 30px;
+    margin: 0;
+  }
+}
 
 #home {
   background-color: #f1f8f9;
