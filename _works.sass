@@ -5,8 +5,11 @@
         color: #36b3bd
         margin-bottom: 60px
     .box
-        .imgbox
-            width: 350px
+        .minibox
+            display: flex
+            justify-content: center
+            .imgbox
+                width: 350px
         .textbox
             padding: 35px 55px
             h2
@@ -18,8 +21,33 @@
                 color: #676f8b
                 line-height: 1.3
 
+    @media screen and ( max-width: 768px )
+        h1
+            font-size: 35px
+            margin-bottom: 40px
+        .box
+            text-align: center
+            .minibox
+                .imgbox
+                    width: 250px
+            .textbox
+                padding: 35px 0px
+                h2
+                    font-size: 20px
+                h4
+                    font-size: 16px
+
     @media screen and ( max-width: 576px )
         h1
             font-size: 70px
         .box
             text-align: center
+            .minibox
+                .imgbox
+                    width: 400px
+            .textbox
+                padding: 35px 0px
+                h2
+                    font-size: 30px
+                h4
+                    font-size: 28px
